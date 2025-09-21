@@ -1,0 +1,3 @@
+# MOTDs made fun!
+
+This script is supposed to be ran at startup. It will change your /etc/motd into one of the silly lines in the script. 
