@@ -1,0 +1,10 @@
+[Unit]
+Description=Updates the MOTD.
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/random_motd_boot.sh
+
+[Install]
+WantedBy=multi-user.target
