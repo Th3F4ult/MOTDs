@@ -2,7 +2,6 @@
 
 # All our MOTDs, Bash doesn't need commas.
 MOTDS=(
-"Also try FreeBSD"
 "Now with IPv6 support"
 "I'm in"
 "Approved by some"
@@ -27,12 +26,29 @@ MOTDS=(
 "I'ts ok, I love you too"
 "$ man woman"
 "Down the electric avenue"
-"unregistered OpenSSH_10.0p2"
+"Unregistered OpenSSH_10.0p2"
+"It works on my machine"
+"For the good of all of us... Except the ones who are dead... But there's no sense crying over every mistake"
+"Looks good to me!"
+"We do what we must because we can"
+"Mommy is proud <3"
+"Also try FreeBSD"
+"Also try Plan9!"
+"Also try Solaris!"
+"Also try MacOS!"
+"[x] Fight [ ] Bag [ ] Run"
+"Dear <<Subject Name Here>>,"
+"You just had to follow the damn train, CJ!"
+"You're breaking my heart </3"
+"I must scream but I've got no mouth"
+"This is not a place of honor. Nothing of value is here. What is here was repulsive to us."
+"Fuck the fascists!"
 )
 
 array_size=${#MOTDS[@]} # Get the size of the array
 random_index=$((RANDOM % array_size)) # Pick one at random using the $RANDOM variable
 random_string=${MOTDS[random_index]} # Pick that line from the array
+echo "$random_string"
 echo > /etc/motd # Newline starts the motd file over
 echo "$random_string" >> /etc/motd # Add the random string to the motd file
 echo >> /etc/motd # A another newline, for readability
